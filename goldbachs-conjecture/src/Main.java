@@ -1,4 +1,5 @@
 public class Main {
+    final static int MAX_NO_ELEMENTS = 100;
 
     public static boolean isPrime(int number) {
         if (number <= 1)
@@ -13,7 +14,7 @@ public class Main {
 
     public static boolean checkGoldbachsConjecture(int number) {
         if ((number > 2) && (number % 2 == 0)) {
-            var arrayOfPrimeNumbers = new int[100];
+            var arrayOfPrimeNumbers = new int[MAX_NO_ELEMENTS];
             int numberOfPrimeNumbers = 0;
 
             for (int i = 0; i < number; i++)
